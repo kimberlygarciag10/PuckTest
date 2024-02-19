@@ -24,9 +24,9 @@
       Puck.eval("Puck.light()", function(v) {
         path.style.fill="rgb("+Math.round(v*255)+",0,0)";
         setTimeout(function() {
-          getLightValue();
+          console.log(getLightValue());
         }, 250);
-      } console.log(getLightValue());
+      };
     }
 
     // When clicked, start trying to get the light value
